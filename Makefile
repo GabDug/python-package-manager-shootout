@@ -24,7 +24,7 @@ TOOLS := poetry
 poetry-tooling:
 	curl -sSL https://install.python-poetry.org | python3 -
 poetry-import:
-	cd poetry; poetry add $$(sed -e 's/#.*//' -e '/^$$/ d' < ../requirements.txt)
+	cd poetry; poetry add -vvv $$(sed -e 's/#.*//' -e '/^$$/ d' < ../requirements.txt)
 poetry-clean-cache: pip-clean
 	rm -rf ~/.cache/pypoetry
 poetry-clean-venv:
