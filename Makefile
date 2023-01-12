@@ -58,7 +58,7 @@ pdm-clean-lock:
 pdm-lock:
 	cd pdm; pdm lock
 pdm-install:
-	cd pdm; pdm install
+	cd pdm; pdm install -v
 pdm-update:
 	cd pdm; pdm update
 pdm-add-package:
